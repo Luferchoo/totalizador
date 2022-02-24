@@ -1,23 +1,26 @@
 <html>
   <body>
-    <h1>Totalizador</h1>
+    <h1>Funciones</h1>
     <form id="totalizador-form">
       <label for="cantidad_items">Cantidad Items:</label>
-      <input type="number" id="cantidad_items" />
-      <input type="submit" value="Totalizar" />
-    </form>
-    <div id="resultado-div"></div>
-    
-    <script type="module" src="./src/presenter.js"></script>
+      <input type="number" id="cantidad_items" />   
 
-    <form id="Precio-form">
       <label for="precio_items">Precio Items:</label>
       <input type="number" id="precio_items" />
-      <input type="submit" value="Cant" />
+
+      <label for="estados">Choose a estados:</label>
+      <select name="estados" id="estados">
+        <option value="ut">Ut</option>
+        <option value="nv">Nv</option>
+        <option value="tx">Tx</option>
+        <option value="al">Al</option>    
+        <option value="ca">Ca</option>  
+      </select>
+
+      <input type="submit" value="Totalizar">
+      
     </form>
-    <div id="resultado-prec"></div>
-
+    <div id="resultado-div"></div>
     <script type="module" src="./src/presenter.js"></script>
-
   </body>
 </html>
